@@ -1,0 +1,241 @@
+  /* ------------------------ */
+  /* 🎨 Style général + Reset */
+  /* ------------------------ */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+  }
+
+  /* Appliquer à toutes les sections principales */
+  .section-centree {
+    text-align: center;
+    padding: 40px 20px;
+    animation: fadeInUp 1s ease both;
+  }
+
+  /* ------------------ */
+  /* 💫 Animation entrée */
+  /* ------------------ */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* -------------------- */
+  /* 🎯 Navigation + Logo */
+  /* -------------------- */
+  header {
+    background-color: #222;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .logo {
+    font-size: 3em;
+    margin-top: 10px;
+  }
+
+  .logo-image img {
+    width: 100px;
+    margin-top: 10px;
+  }
+
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  nav ul li {
+    margin: 0 15px;
+  }
+
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s;
+  }
+
+  nav ul li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+  }
+
+  /* ------------------ */
+  /* ✨ Images animées */
+  /* ------------------ */
+  .section-centree img {
+    display: block;
+    margin: 20px auto;
+    width: 450px;
+    max-width: 100%;
+    border-radius: 10px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+
+  .section-centree img:hover {
+    transform: scale(1.07) rotate(1deg);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  /* ------------------ */
+  /* 🛒 Style commande */
+  /* ------------------ */
+  .menu .item {
+    background: white;
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    animation: fadeInUp 0.8s ease;
+  }
+
+  button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+
+  button:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+  }
+
+  ul#panier {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  /* ------------------ */
+  /* 📱 Responsive Mobile */
+  /* ------------------ */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    nav ul li {
+      margin: 10px 0;
+    }
+
+    .logo {
+      font-size: 26px;
+    }
+
+    h1 {
+      font-size: 22px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+  }
+
+  /* ------------------ */
+  /* 📍 Infos pratiques */
+  /* ------------------ */
+  #infos-pratiques {
+    background-color: #f0fff0;
+    text-align: center;
+  }
+
+  .horaires {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+
+  .horaires li {
+    font-size: 18px;
+    margin: 6px 0;
+  }
+
+  .reseaux a {
+    display: inline-block;
+    margin: 10px 15px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #333;
+    transition: transform 0.2s ease, color 0.3s;
+  }
+
+  .reseaux a:hover {
+    color: #e74c3c;
+    transform: scale(1.1);
+  }
+
+  /* ------------------ */
+  /* 🗺️ Carte Google Maps */
+  /* ------------------ */
+  .map-container {
+    margin: 20px 0;
+    max-width: 100%;
+  }
+
+  /* ------------------ */
+  /* ⬆️ Bouton Scroll top */
+  /* ------------------ */
+  #scrollTopBtn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 12px 18px;
+    font-size: 16px;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+    border: none;
+    display: none;
+    z-index: 1000;
+    transition: opacity 0.3s;
+  }
+
+  #scrollTopBtn.show {
+    display: block;
+    opacity: 1;
+  }
+
+  #scrollTopBtn:hover {
+    background-color: #555;
+    transform: scale(1.05);
+  }
+
+  /* ------------------ */
+  /* 📩 Footer & Contact */
+  /* ------------------ */
+  footer {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  .contact-info a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .contact-info a:hover {
+    text-decoration: underline;
+  }
