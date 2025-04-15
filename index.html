@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Snack Al Baraka - Menu</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        /* Centrage des sections */
+        .section-centree {
+            text-align: center;
+        }
+
+        .section-centree img {
+            margin: 0 auto;
+            display: block;
+        }
+    </style>
+</head>
+<body class="menu">
+    <header>
+        <h1 class="logo">Snack Al Baraka</h1>
+        <div class="logo-image">
+            <img src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png" alt="Logo du Snack" style="width:100px; margin-top: 10px;">
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#specialite">Notre Spécialité</a></li>
+                <li><a href="#avis">Vos avis</a></li>
+                <li><a href="#tacos">Nos Tacos</a></li>
+                <li><a href="#photos">Photos d’intérieur</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section-centree" id="accueil">
+            <h1>Accueil</h1>
+            <p>Bienvenue au Snack Al Baraka !</p>
+            <img src="https://img.restaurantguru.com/r28b-Snack-BibiLOo-menu.jpg" class="animated-photo" style="width:450px; border-radius:10px;">
+        </section>
+
+        <section class="section-centree" id="specialite">
+            <h1>Notre Spécialité</h1>
+            <p>Découvrez notre spécialité : le tacos au poulet.</p>
+            <img src="https://img.restaurantguru.com/r28b-Snack-BibiLOo-menu.jpg" class="animated-photo" style="width:450px; border-radius:10px;">
+        </section>
+
+        <section class="section-centree" id="avis">
+            <h1>Vos avis</h1>
+            <p>Laissez-nous votre avis sur notre snack !</p>
+            <img src="https://img.restaurantguru.com/r28b-Snack-BibiLOo-menu.jpg" class="animated-photo" style="width:450px; border-radius:10px;">
+        </section>
+
+        <section class="section-centree" id="tacos">
+            <h1>Nos Tacos</h1>
+            <p>Découvrez notre sélection de tacos.</p>
+            <img src="https://img.restaurantguru.com/r28b-Snack-BibiLOo-menu.jpg" class="animated-photo" style="width:450px; border-radius:10px;">
+        </section>
+        <section class="section-centree" id="photos">
+            <h1>Photos d’intérieur</h1>
+            <p>Découvrez notre snack en photos.</p>
+            <img src="https://img.restaurantguru.com/r28b-Snack-BibiLOo-menu.jpg" class="animated-photo" style="width:450px; border-radius:10px;">
+        </section>
+    </main>
+
+    <section id="infos-pratiques" class="section-centree">
+        <h1>Infos Pratiques</h1>
+        <h2>Où nous trouver</h2>
+        <div class="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.991621987881!2d2.361420076216309!3d48.86727100091106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e066a8e7421%3A0x3141d1de3f63f7b!2sPlace%20de%20la%20R%C3%A9publique%2C%2075011%20Paris!5e0!3m2!1sfr!2sfr!4v1713000000000!5m2!1sfr!2sfr"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+        <h2>Horaires d'ouverture</h2>
+        <ul class="horaires">
+            <li>🕐 Lundi - Vendredi : 11h00 - 22h00</li>
+            <li>🕐 Samedi : 12h00 - 23h00</li>
+            <li>🛑 Dimanche : Fermé</li>
+        </ul>
+
+        <h2>Suivez-nous</h2>
+        <div class="reseaux">
+            <a href="https://instagram.com/toninsta" target="_blank">📸 Instagram</a>
+            <a href="https://tiktok.com/@tontiktok" target="_blank">🎥 TikTok</a>
+        </div>
+    </section>
+
+    <footer>
+        <section id="contact" class="section-centree">
+            <h1>Nous contacter</h1>
+            <p>Contactez-nous pour toute question ou commande :</p>
+            <div class="contact-info">
+                <p>📞 Téléphone : <a href="tel:+33612345678">06 12 34 56 78</a></p>
+                <p>📧 Email : <a href="mailto:snackalbaraka@example.com">snackalbaraka@example.com</a></p>
+                <p>📍 Adresse : 123 Rue du Bon Tacos, 75000 Paris</p>
+            </div>
+        </section>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            let button = document.createElement("button");
+            button.innerHTML = "Retour en haut";
+            button.style.position = "fixed";
+            button.style.bottom = "20px";
+            button.style.right = "20px";
+            button.style.padding = "10px";
+            button.style.fontSize = "16px";
+            button.style.borderRadius = "5px";
+            button.style.backgroundColor = "#333";
+            button.style.color = "white";
+            button.style.border = "none";
+            button.style.display = "none";
+
+            document.body.appendChild(button);
+
+            window.onscroll = function () {
+                if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                    button.style.display = "block";
+                } else {
+                    button.style.display = "none";
+                }
+            };
+
+            button.onclick = function () {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            };
+        });
+    </script>
+</body>
+</html>
